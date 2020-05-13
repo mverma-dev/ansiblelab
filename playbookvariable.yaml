@@ -1,0 +1,8 @@
+---
+- hosts: linux
+  vars:
+    test: Hi all
+  tasks:
+  - name: print variable
+    debug:
+      msg: "{{ test }}"
